@@ -1,7 +1,5 @@
----
-title: "Readme File"
-output: html_document
----
+#Readme 
+
 ## Functions description
 The run_analysis script is composed of two main functions called run_analysis and group_by_activity_subject. 
 You should start by executing the *run_analysis* function to answer points 1 to 4 of the exercise, then use the output of this function as an input of the *group_by_activity_subject* function to get the tidy data (step 5 of the assignment).
