@@ -1,0 +1,40 @@
+---
+title: "Codebook"
+output: html_document
+---
+
+## Data dictionary
+
+The following document describe the variables created as an input of the 2 main functions of the script (i.e.: run_analysis function and group_by_activity function). For description of the functions and the overall script please refer to the readme.Rmd file.
+
+### run_analysis function
+The function creates a dataframe of 5 variables described below:
+
+* Subject_id
+    + Description:Identifier of the subject performing the test
+    + Type: Integer
+* Activity_set
+    + Description: A two levels factor that identify from where the data has been captured. The 2 options are either *training* data or *test* data
+    + Type: Factor with 2 levels
+* Labels
+    + Description: A character vector that identify the activity performed by the subject
+    + Type: Character 
+* mean
+    + Description: A numeric value that calculate the average value of the results for each activity_set
+    + Type: numeric 
+* Standard_Deviation
+    + Description: A numeric value that calculate the standard deviation value of the results for each activity set.
+    + Type: numeric
+
+### group_by_activity_subject function
+The group_by_activity_subject function takes as input the data frame from the run_analysis function and creates a second, independent tidy data set with the average of each variable for each activity and each subject. The function creates a dataframe of 3 variables described below:
+
+* Subject_id
+    + Description:Identifier of the subject performing the test
+    + Type: Integer
+* Labels
+    + Description: A character vector that identify the activity performed by the subject
+    + Type: Character 
+* Average
+    + Description: Calculate the average of each variable for each activity and each subject.
+    + Type: Numeric

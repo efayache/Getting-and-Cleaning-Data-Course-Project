@@ -1,0 +1,40 @@
+---
+title: "Readme File"
+output: html_document
+---
+## Functions description
+The run_analysis script is composed of two main functions called run_analysis and group_by_activity_subject. 
+You should start by executing the *run_analysis* function to answer points 1 to 4 of the exercise, then use the output of this function as an input of the *group_by_activity_subject* function to get the tidy data (step 5 of the assignment).
+
+### run_analysis function
+The main objectives of the “run_analysis” function are as follow:
+
+* Merges the training and the test sets to create one data set
+* Extracts only the measurements on the mean and standard deviation for each measurement
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names
+
+As an output of the run_analysis function, a data frame is created which illustrate for each subject and activity label the mean and standard deviation values.
+
+The run_analysis function leverage a number of sub-function to execute its task.
+
+#### simplify_table <- function(tbl)
+This function take as input the merged data set and extracts only measurement on the mean
+and standard deviation for each measurement.
+ 
+#### activity_description <- function(tbl)
+This function takes as input a data frame and replace numbers in column 'Labels' by activities description.
+
+####merge_sets <- function(set1,set2)
+This function take the 2 datasets as input and merge them
+
+####gen_table_training <-function()
+This function will read the Training set (X_Train) and the Training labels and generated a merged data.frame. The function also delete the Variables columns that are no more needed
+
+#### gen_table_test <-function()
+This function will read the Test set (X_Test) and the Test labels and generated a merged data.frame.
+
+
+### group_by_activity_subject function
+The group_by_activity_subject function takes as input the data frame from the run_analysis function and creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
