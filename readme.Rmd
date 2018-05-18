@@ -1,4 +1,4 @@
-#Readme 
+#Readme
 
 ## Functions description
 The run_analysis script is composed of two main functions called run_analysis and group_by_activity_subject. 
