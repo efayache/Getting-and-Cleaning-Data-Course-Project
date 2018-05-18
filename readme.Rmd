@@ -2,7 +2,10 @@
 
 ## Functions description
 The run_analysis script is composed of two main functions called run_analysis and group_by_activity_subject. 
+Download the folder structure as is from the github repo and set the working directory to the path where the run_analysis.R script is stored then RUN the code; if the path is not setup properly or the directory structure is changedyou will have errors.
+
 You should start by executing the *run_analysis* function to answer points 1 to 4 of the exercise, then use the output of this function as an input of the *group_by_activity_subject* function to get the tidy data (step 5 of the assignment).
+
 
 ### run_analysis function
 The main objectives of the “run_analysis” function are as follow:
